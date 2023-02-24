@@ -4,13 +4,23 @@
 //import "./NavBar.module.css";
 //className="containerNav"
 
-//MODULOS
+//MODULOSs
 import style from "./NavBar.module.css";
+import imagenes from "../../images/criar-mojarras.png";
+//Si la imagen esta en public simplemente utilizo /nombredelaimg"
 
 export const NavBar = () => {
   return (
     <div>
       <h1 className={style.titulo}>NavBar</h1>
+      <div style={{ textAlign: "center" }}>
+        <img
+          style={{ width: "40%", height: "60vh" }}
+          src="https://res.cloudinary.com/dohoagwpd/image/upload/v1677194230/samples/ecommerce/car-interior-design.jpg"
+          alt=""
+        />
+        <img src={imagenes} alt="" srcset="" />
+      </div>
     </div>
   );
 };
